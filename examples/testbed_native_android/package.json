@@ -4,16 +4,20 @@
   "description": "Native Android app with RN testbed component",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "~15.4.2",
     "react-native": "^0.42.3",
-    "react-native-branch": "file:../.."
+    "react-native-branch": "file:../..",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-preset-react-native": "1.9.1"
-  }
+  },
+  "snyk": true
 }
